@@ -474,8 +474,23 @@
       border-radius: 2px; border: none;
       transition: opacity 0.2s, transform 0.2s;
     }
-    .footer-cta:hover { opacity: 0.8; transform: translateY(-1px); }
-
+.footer-cta:hover { opacity: 0.8; transform: translateY(-1px); }
+    .footer-legal {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--gray-mid);
+      margin-top: 8px;
+    }
+    .footer-legal a {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gray-muted);
+      transition: color 0.2s;
+    }
+    .footer-legal a:hover { color: var(--gray-text); }
     @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
 
     /* ── RESPONSIVE ── */
@@ -764,10 +779,12 @@
   <div class="footer-links">
     <a href="https://www.linkedin.com/in/mor-mazaky-582a1756/" target="_blank" rel="noopener">LinkedIn</a>
     <a href="mailto:mor.mazaky@gmail.com">Email</a>
+  </div>
+  <a href="mailto:mor.mazaky@gmail.com" class="footer-cta">Let's talk</a>
+  <div class="footer-legal">
     <a href="impressum.html">Impressum</a>
     <a href="datenschutz.html">Datenschutzerklärung</a>
   </div>
-  <a href="mailto:mor.mazaky@gmail.com" class="footer-cta">Let's talk</a>
 </footer>
 
 <script>
